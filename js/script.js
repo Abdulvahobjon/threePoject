@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
   function getTime(endTime) {
     let days, hours, minutes, seconds;
-    const timer = Data.parse(endTime) - Data.parse(new Date());
+    const timer = new Date(endTime) - new Date();
 
     if (timer < 0) {
       days = 0;
